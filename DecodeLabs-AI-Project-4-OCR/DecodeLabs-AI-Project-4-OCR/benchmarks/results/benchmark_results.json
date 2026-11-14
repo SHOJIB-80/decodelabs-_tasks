@@ -1,0 +1,72 @@
+{
+  "image": "samples/sample_document.png",
+  "image_sha256": "5579a94e586e96c1733518fdbabdc42f8d3920f457404c2672faa36d091bd529",
+  "ground_truth": "benchmarks/ground_truth/sample_document.txt",
+  "confidence_threshold": 80.0,
+  "psm": 6,
+  "repeats": 3,
+  "tesseract_version": "5.3.4",
+  "methodology": "Case-folded whitespace tokenization; punctuation retained; CER/WER use Levenshtein edit distance.",
+  "results": [
+    {
+      "pipeline": "original_baseline",
+      "variant": "grayscale",
+      "cer": 0.0,
+      "wer": 0.0,
+      "processing_time_seconds_mean": 0.180334,
+      "processing_time_seconds_runs": [
+        0.190128,
+        0.17243,
+        0.178443
+      ],
+      "accepted_word_count": 28,
+      "mean_accepted_confidence": 95.2,
+      "recognized_text": "DECODELABS | PROJECT 4\nOptical Character Recognition\nPython + OpenCV + Tesseract\nThis document contains sample printed text.\nRecognition should be readable and clear.\nConfidence filtering: 80 percent"
+    },
+    {
+      "pipeline": "original_baseline",
+      "variant": "adaptive_threshold",
+      "cer": 0.0,
+      "wer": 0.0,
+      "processing_time_seconds_mean": 0.144804,
+      "processing_time_seconds_runs": [
+        0.14354,
+        0.143276,
+        0.147595
+      ],
+      "accepted_word_count": 28,
+      "mean_accepted_confidence": 95.1,
+      "recognized_text": "DECODELABS | PROJECT 4\nOptical Character Recognition\nPython + OpenCV + Tesseract\nThis document contains sample printed text.\nRecognition should be readable and clear.\nConfidence filtering: 80 percent"
+    },
+    {
+      "pipeline": "upgraded",
+      "variant": "grayscale",
+      "cer": 0.0,
+      "wer": 0.0,
+      "processing_time_seconds_mean": 0.153225,
+      "processing_time_seconds_runs": [
+        0.149807,
+        0.159792,
+        0.150075
+      ],
+      "accepted_word_count": 28,
+      "mean_accepted_confidence": 95.2,
+      "recognized_text": "DECODELABS | PROJECT 4\nOptical Character Recognition\nPython + OpenCV + Tesseract\nThis document contains sample printed text.\nRecognition should be readable and clear.\nConfidence filtering: 80 percent"
+    },
+    {
+      "pipeline": "upgraded",
+      "variant": "adaptive_threshold",
+      "cer": 0.0,
+      "wer": 0.0,
+      "processing_time_seconds_mean": 0.154545,
+      "processing_time_seconds_runs": [
+        0.15972,
+        0.14262,
+        0.161296
+      ],
+      "accepted_word_count": 28,
+      "mean_accepted_confidence": 95.1,
+      "recognized_text": "DECODELABS | PROJECT 4\nOptical Character Recognition\nPython + OpenCV + Tesseract\nThis document contains sample printed text.\nRecognition should be readable and clear.\nConfidence filtering: 80 percent"
+    }
+  ]
+}

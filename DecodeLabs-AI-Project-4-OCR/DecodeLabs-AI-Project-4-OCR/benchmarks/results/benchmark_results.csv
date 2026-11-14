@@ -1,0 +1,5 @@
+pipeline,variant,cer,wer,processing_time_seconds_mean,accepted_word_count,mean_accepted_confidence
+original_baseline,grayscale,0.0,0.0,0.180334,28,95.2
+original_baseline,adaptive_threshold,0.0,0.0,0.144804,28,95.1
+upgraded,grayscale,0.0,0.0,0.153225,28,95.2
+upgraded,adaptive_threshold,0.0,0.0,0.154545,28,95.1

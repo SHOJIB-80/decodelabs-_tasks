@@ -1,0 +1,6 @@
+DECODELABS | PROJECT 4
+Optical Character Recognition
+Python + OpenCV + Tesseract
+This document contains sample printed text.
+Recognition should be readable and clear.
+Confidence filtering: 80 percent
