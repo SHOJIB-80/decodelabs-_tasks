@@ -1,0 +1,355 @@
+{
+  "version": 1,
+  "intents": [
+    {
+      "name": "greetings",
+      "examples": [
+        "hello",
+        "hi there",
+        "hey DecodeBot",
+        "good morning",
+        "good evening",
+        "howdy",
+        "hello there",
+        "what is up",
+        "hey there",
+        "good to see you"
+      ],
+      "hints": {
+        "hello": 0.88,
+        "hi": 0.82,
+        "hey": 0.82,
+        "good morning": 0.88,
+        "good evening": 0.88,
+        "howdy": 0.88,
+        "what is up": 0.84,
+        "good to see you": 0.84
+      },
+      "responses": [
+        "Hello! I'm DecodeBot AI. What would you like to explore?",
+        "Hi there. Ask me about Python, programming, AI, or machine learning."
+      ],
+      "follow_up": "I'm here to help with beginner questions about Python, programming, artificial intelligence, and machine learning."
+    },
+    {
+      "name": "introduction",
+      "examples": [
+        "what is your name",
+        "who are you",
+        "what should I call you",
+        "who created you",
+        "who made you",
+        "tell me about yourself",
+        "are you DecodeBot",
+        "what name do you go by",
+        "which name do you use",
+        "what do people call you"
+      ],
+      "hints": {
+        "who are you": 0.9,
+        "what is your name": 0.9,
+        "what should i call you": 0.86,
+        "what do people call you": 0.84,
+        "what do friends call you": 0.84,
+        "who created": 0.86,
+        "who made": 0.86,
+        "who built": 0.86,
+        "who developed": 0.86,
+        "tell me about yourself": 0.82,
+        "what name do you go by": 0.84,
+        "which name do you use": 0.82,
+        "decodelabs bot": 0.78
+      },
+      "responses": [
+        "I'm DecodeBot AI, a locally running educational chatbot project. I use intent matching over a small knowledge base, not a large language model.",
+        "You can call me DecodeBot AI. I answer selected beginner questions using local examples and responses."
+      ],
+      "follow_up": "This project demonstrates text normalization, TF-IDF similarity, fuzzy matching, and a small intent-based knowledge base. It does not generate open-ended answers like a large language model."
+    },
+    {
+      "name": "general_questions",
+      "examples": [
+        "what can you do",
+        "what topics can you discuss",
+        "can you answer questions",
+        "how does this chatbot work",
+        "what kind of questions can I ask",
+        "what are your capabilities",
+        "are you a real person",
+        "what information is available here",
+        "what subjects are within your scope",
+        "what areas do you cover",
+        "what can I ask about"
+      ],
+      "hints": {
+        "what can you do": 0.86,
+        "what topics": 0.84,
+        "what subjects": 0.84,
+        "what kind of questions": 0.82,
+        "what types of questions": 0.82,
+        "what are your capabilities": 0.86,
+        "able to help with": 0.84,
+        "what can you help with": 0.84,
+        "how does this chatbot work": 0.8,
+        "are you a real person": 0.8,
+        "what kind of information": 0.82,
+        "what areas do you cover": 0.82,
+        "what can i ask about": 0.82
+      },
+      "responses": [
+        "I can answer a limited set of beginner questions about Python, programming, AI, and machine learning. Try one of the suggested questions.",
+        "I match your message to locally stored intent examples. I work best for questions in my knowledge base and will say when a match is uncertain."
+      ],
+      "follow_up": "My current knowledge is limited to the topics listed in the sidebar. You can expand it by adding intent examples and responses to knowledge_base/intents.json."
+    },
+    {
+      "name": "artificial_intelligence",
+      "examples": [
+        "what is artificial intelligence",
+        "what is AI",
+        "explain AI simply",
+        "define artificial intelligence",
+        "how would you explain AI to a beginner",
+        "what does AI mean",
+        "tell me about artificial intelligence",
+        "how can machines mimic human intelligence",
+        "what tasks can be done using AI",
+        "how do computers simulate aspects of thinking",
+        "computer systems that perceive and reason"
+      ],
+      "hints": {
+        "artificial intelligence": 0.9,
+        " ai ": 0.86,
+        "human intelligence": 0.82,
+        "simulate aspects of thinking": 0.8,
+        "recognize patterns and understand speech": 0.8,
+        "human like decision making": 0.78
+      },
+      "responses": [
+        "Artificial intelligence (AI) is a broad field focused on building computer systems that perform tasks commonly associated with human intelligence, such as recognizing patterns or understanding language.",
+        "AI is the broader idea of making computer systems perform tasks that usually require capabilities such as learning, reasoning, perception, or language processing."
+      ],
+      "follow_up": "AI has many subfields, including machine learning, computer vision, planning, and natural language processing. This chatbot uses text similarity; it is not itself a generative AI model."
+    },
+    {
+      "name": "machine_learning",
+      "examples": [
+        "what is machine learning",
+        "explain machine learning",
+        "how does a machine learn",
+        "define ML",
+        "what does ML stand for",
+        "how is machine learning different from AI",
+        "teach me the basics of machine learning",
+        "how do models learn from data",
+        "what does it mean to train a model",
+        "how can data improve predictions",
+        "systems that learn patterns instead of fixed rules"
+      ],
+      "hints": {
+        "machine learning": 0.9,
+        " ml ": 0.88,
+        "learn from examples": 0.82,
+        "machine learn": 0.78,
+        "model learn": 0.82,
+        "train a model": 0.84,
+        "improve predictions": 0.82,
+        "studying data": 0.8
+      },
+      "responses": [
+        "Machine learning (ML) is a branch of AI in which a computer uses data to identify patterns and make predictions or decisions, rather than following only hand-written rules.",
+        "In machine learning, a model is fitted to examples so it can identify patterns and generalize to new inputs. The quality of its results depends on the data and task."
+      ],
+      "follow_up": "Common learning setups include supervised learning (labeled examples), unsupervised learning (finding structure without labels), and reinforcement learning (learning from feedback or rewards)."
+    },
+    {
+      "name": "programming",
+      "examples": [
+        "what is programming",
+        "what does coding mean",
+        "how do I start writing code",
+        "what is a programming language",
+        "what does a programmer do",
+        "explain software development",
+        "how do programs work",
+        "how do you create instructions for a computer",
+        "how to build a basic software application",
+        "writing steps a computer can execute",
+        "how can I write an application"
+      ],
+      "hints": {
+        "programming": 0.82,
+        "programmer": 0.82,
+        "coding": 0.72,
+        "writing software": 0.82,
+        "computer instructions": 0.84,
+        "computer code": 0.8,
+        "software development": 0.82,
+        "instructions a computer": 0.84,
+        "make an app from scratch": 0.82,
+        "software application": 0.8
+      },
+      "responses": [
+        "Programming is the process of writing instructions that a computer can execute. A programming language provides rules and tools for expressing those instructions.",
+        "A program is a set of instructions. Developers write, run, test, and revise programs to solve problems."
+      ],
+      "follow_up": "A practical way to learn is to choose a small goal, write a simple program, run it, and improve it step by step. Python is one beginner-friendly option."
+    },
+    {
+      "name": "python",
+      "examples": [
+        "what is Python",
+        "tell me about the Python language",
+        "is Python a programming language",
+        "explain Python for a beginner",
+        "what is the Python programming language used for",
+        "why do people learn Python",
+        "give me an introduction to Python",
+        "what tasks is the Python language good for",
+        "can Python automate routine work",
+        "how can I use Python for data analysis"
+      ],
+      "hints": {
+        "python": 0.92
+      },
+      "responses": [
+        "Python is a general-purpose programming language known for readable syntax. It is used in scripting, web development, automation, data analysis, and machine learning.",
+        "Python is a popular programming language. Its clear syntax and large ecosystem make it useful for both small scripts and larger applications."
+      ],
+      "follow_up": "Python is used for automation, web services, data analysis, scientific computing, education, and many machine-learning workflows. The best tool depends on the problem and the libraries involved."
+    },
+    {
+      "name": "project_assistance",
+      "examples": [
+        "can you help me with my coding project",
+        "my Python program has an error",
+        "help me debug this code",
+        "I need help planning a programming project",
+        "how should I approach a coding assignment",
+        "my code is not working",
+        "can you help with a software project",
+        "how to fix a program that crashes",
+        "debugging unexpected behavior in a script",
+        "why does my application stop unexpectedly",
+        "troubleshoot my program"
+      ],
+      "hints": {
+        "debug": 0.84,
+        "bug": 0.84,
+        "error": 0.82,
+        "stuck on a coding task": 0.84,
+        "my code is not working": 0.86,
+        "coding project": 0.82,
+        "software project": 0.8,
+        "programming assignment": 0.82,
+        "crashes": 0.82,
+        "crash": 0.82,
+        "troubleshoot": 0.82,
+        "closes unexpectedly": 0.82,
+        "unexpectedly after i run it": 0.82,
+        "script produces the wrong result": 0.84
+      },
+      "responses": [
+        "I can offer general beginner guidance. Describe the goal, what you expected, what happened instead, and any error message. Avoid sharing passwords or private keys.",
+        "For a coding issue, share a small reproducible example, the exact error, and what you already tried. I can only give guidance covered by this local chatbot's limited knowledge."
+      ],
+      "follow_up": "A useful debugging process is to reproduce the issue, read the full error message, isolate a small failing example, change one thing at a time, and rerun the test."
+    },
+    {
+      "name": "help",
+      "examples": [
+        "help",
+        "I need help",
+        "show me how to use this chatbot",
+        "what should I type",
+        "give me some suggestions",
+        "how do I get started here",
+        "show available topics",
+        "how can I get started",
+        "give me ideas for questions",
+        "where can I find example questions",
+        "how do I begin using this assistant"
+      ],
+      "hints": {
+        "suggestions": 0.84,
+        "example prompts": 0.84,
+        "how can i ask": 0.84,
+        "what should i type": 0.82,
+        "how do i use": 0.82,
+        "show available topics": 0.82,
+        "show me how to use": 0.84,
+        "give me some sample things": 0.84,
+        "where do i begin": 0.82,
+        "ideas for questions": 0.82
+      },
+      "responses": [
+        "Try asking: 'What is Python?', 'Explain AI simply', 'What is machine learning?', or 'How do I start programming?' You can clear the current conversation from the dashboard.",
+        "I understand selected questions about introductions, Python, programming, AI, machine learning, project guidance, and basic chatbot use."
+      ],
+      "follow_up": "Choose a suggested question in the dashboard, or type a question about Python, programming, AI, or machine learning. I may not know topics outside those areas."
+    },
+    {
+      "name": "farewells",
+      "examples": [
+        "goodbye",
+        "bye",
+        "see you later",
+        "talk to you soon",
+        "I have to go",
+        "that's all for now",
+        "farewell",
+        "talk soon",
+        "catch you later",
+        "I will be leaving now"
+      ],
+      "hints": {
+        "goodbye": 0.88,
+        "bye": 0.86,
+        "see you": 0.84,
+        "talk to you": 0.82,
+        "have to go": 0.82,
+        "another time": 0.82,
+        "farewell": 0.88,
+        "talk soon": 0.84,
+        "catch you later": 0.84,
+        "leaving now": 0.82
+      },
+      "responses": [
+        "Goodbye! Thanks for chatting with DecodeBot AI.",
+        "See you next time. Keep experimenting and learning!"
+      ]
+    },
+    {
+      "name": "gratitude",
+      "examples": [
+        "thank you",
+        "thanks a lot",
+        "I appreciate your help",
+        "thanks for explaining",
+        "that was helpful",
+        "many thanks",
+        "cheers",
+        "much obliged",
+        "that helped a lot",
+        "I am grateful",
+        "I appreciate that"
+      ],
+      "hints": {
+        "thank you": 0.88,
+        "thanks": 0.86,
+        "appreciate": 0.82,
+        "appreciated": 0.84,
+        "grateful": 0.84,
+        "many thanks": 0.86,
+        "much obliged": 0.84,
+        "that helped a lot": 0.82,
+        "i am grateful": 0.84,
+        "i appreciate that": 0.82
+      },
+      "responses": [
+        "You're welcome!",
+        "Happy to help. Keep the questions coming."
+      ]
+    }
+  ]
+}
