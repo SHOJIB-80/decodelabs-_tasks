@@ -1,0 +1,5 @@
+Model,CV macro F1,Test accuracy,Test precision (macro),Test recall (macro),Test F1 (macro),Training time (s),Prediction time (ms/sample),Best parameters
+K-Nearest Neighbors (KNN),0.96653595,0.93333333,0.94444444,0.93333333,0.93265993,0.24720420,0.03296107,"{'classifier__n_neighbors': 3, 'classifier__p': 2, 'classifier__weights': 'uniform'}"
+Decision Tree,0.95797074,0.93333333,0.93333333,0.93333333,0.93333333,0.13654926,0.01242717,"{'classifier__criterion': 'gini', 'classifier__max_depth': None, 'classifier__min_samples_leaf': 2}"
+Random Forest,0.96633676,0.96666667,0.96969697,0.96666667,0.96658312,2.73892192,0.09587927,"{'classifier__max_depth': None, 'classifier__min_samples_leaf': 2, 'classifier__n_estimators': 100}"
+Support Vector Machine (SVM),0.97490196,0.93333333,0.93333333,0.93333333,0.93333333,0.11254427,0.01573743,"{'classifier__C': 0.1, 'classifier__gamma': 'scale', 'classifier__kernel': 'linear'}"
